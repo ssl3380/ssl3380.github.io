@@ -4,26 +4,20 @@ body {
 	background-size: 100pt 100pt;
 }
 
-#gamer {
+#cool-div {
 	width: 250pt;
 	height: 50pt;
+
 	margin: auto;
 	text-align: center;
 	border: 5pt Inset black;
 	animation: test 1s infinite alternate;
 	font-family: 'Courier New', Courier, monospace;
-	al
 }
 
 @keyframes test {
-	from {
-		color: black;
-		background-color: white;
-	}
-	to {
-		color: white;
-		background-color: black;
-	}
+	from {color: black;background-color: white;}
+	to {color: white;background-color: black;}
 }
 
 @keyframes epic {
