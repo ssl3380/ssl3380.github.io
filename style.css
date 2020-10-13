@@ -1,26 +1,35 @@
 body {
-	background-color: black;
-	animation: epic 1ms infinite alternate;
 	background-size: 100pt 100pt;
+	background-color: black;
+	animation: body-anim 1ms infinite alternate;
+}
+
+img {
+	width: inherit;
+}
+
+ul {
+	text-align: left;
 }
 
 #cool-div {
 	width: 250pt;
-	height: 50pt;
 
 	margin: auto;
 	text-align: center;
-	border: 5pt Inset black;
-	animation: test 1s infinite alternate;
+	padding: 5pt;
+	
 	font-family: 'Courier New', Courier, monospace;
+
+	animation: cool-div-anim 1s infinite alternate;
 }
 
-@keyframes test {
-	from {color: black;background-color: white;}
-	to {color: white;background-color: black;}
+@keyframes cool-div-anim {
+	from {color:black;background-color:white;border:5pt solid black;}
+	to {color:white;background-color:black;border:5pt solid white;}
 }
 
-@keyframes epic {
-	from {background-image: url("image1.png");}
-	to {background-image: url("image2.png");}
+@keyframes body-anim {
+	from {background-image:url("image1.png");}
+	to {background-image:url("image2.png");}
 }
